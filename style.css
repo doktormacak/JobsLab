@@ -1,0 +1,65 @@
+/* variables */
+:root{
+    --primary: navy;
+    --secondary: grey;
+    @import url('@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Rubik&display=swap');');
+}
+/* reset */
+body,p,a,ul,li{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+li{
+ list-style-type: none;
+}
+
+/* base styles */
+body{
+background: var(--primary);
+font-family: 'Rubik Regular', sans-serif;
+}
+
+/* fonts */
+
+h1,h2,h3,h4{
+color: #dddbff;
+font-weight: normal;
+}
+p,a,li{
+color: #9893d8;
+}
+h1,h3{
+font-size: 1.2em;
+}
+h2{
+font-size: 1.6em;
+}
+h4{
+font-size: 1.1em;
+}
+
+/* mobile style */
+/* stranica podijeljena u 10 kolona */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+/* header */
+
+
+
+/* slider  */
+
+
+/* top rated */
+
+
+
+/* sidebar */
+
+
+/* footer */
+
