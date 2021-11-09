@@ -1,7 +1,7 @@
 /* variables */
 :root{
-    --primary: navy;
-    --secondary: grey;
+    --primary: #77437F;
+    --secondary: #F0F7AA;
     @import url('@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Rubik&display=swap');');
 }
 /* reset */
@@ -17,7 +17,7 @@ li{
 /* base styles */
 body{
 background: var(--primary);
-font-family: 'Rubik Regular', sans-serif;
+font-family: 'Lexend Peta', sans-serif;
 }
 
 /* fonts */
