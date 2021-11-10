@@ -1,65 +1,196 @@
 /* variables */
-:root{
-    --primary: #77437F;
-    --secondary: #F0F7AA;
-    @import url('@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Rubik&display=swap');');
+:root {
+  --primary: #77437f;
+  --secondary: #f0f7aa;
+  @import url("@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Rubik&display=swap");")
+  ;;
 }
 /* reset */
-body,p,a,ul,li{
-margin: 0;
-padding: 0;
-text-decoration: none;
+* {
+  box-sizing: border-box;
 }
-li{
- list-style-type: none;
+
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
 }
 
 /* base styles */
-body{
-background: var(--primary);
-font-family: 'Lexend Peta', sans-serif;
+body {
+  background: var(--primary);
+  font-family: "Lexend Peta", sans-serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 60px;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* fonts */
 
-h1,h2,h3,h4{
-color: #dddbff;
-font-weight: normal;
+h1,
+h2,
+h3,
+h4 {
+  color: #dddbff;
+  font-weight: normal;
 }
-p,a,li{
-color: #9893d8;
+p,
+a,
+li {
+  color: #9893d8;
 }
-h1,h3{
-font-size: 1.2em;
+h1,
+h3 {
+  font-size: 1.2em;
 }
-h2{
-font-size: 1.6em;
+h2 {
+  font-size: 1.6em;
 }
-h4{
-font-size: 1.1em;
+h4 {
+  font-size: 1.1em;
 }
 
 /* mobile style */
 /* stranica podijeljena u 10 kolona */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
 }
 
 /* header */
 
-
-
 /* slider  */
 
+.slider {
+  background-color: var(--secondary);
+  width: 90%;
+  margin: 50px auto 0 auto;
+  grid-template-columns: 1fr 3fr 1fr;
+  border-radius: 50px;
+  height: 300px;
+}
+
+.sliderJobs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  color: black;
+}
+
+.sliderJobName {
+  font-weight: 700;
+}
+
+.slide {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.sliderMore {
+  display: none;
+}
+
+.sliderJobs a {
+  color: black;
+  font-weight: 600;
+}
+
+.sliderJobs p {
+  color: black;
+}
+
+.sliderJobs a:active,
+.sliderJobs a:hover {
+  color: var(--primary);
+}
+
+.sliderReadMore {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.3em;
+  margin-top: 10px;
+}
+
+.sliderReadMore:hover {
+  background-color: #64376b;
+}
+
+.sliderReadMore:active {
+  transform: scale(0.96);
+}
+
+#previous,
+#next {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#previous {
+  float: left;
+}
+#next {
+  float: right;
+}
+
+#previous:hover,
+#next:hover {
+  transform: scale(1.05);
+}
+#next:active,
+#previous:active {
+  transform: scale(0.97);
+}
+
+#previous img,
+#next img {
+  height: 2.5em;
+}
+
+.sliderTwo,
+.sliderThree {
+  display: none;
+}
 
 /* top rated */
 
-
-
 /* sidebar */
-
 
 /* footer */
 
+/* Large Screens */
+@media screen and (min-width: 64em) {
+  .slider {
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    width: 70%;
+    float: left;
+    margin-left: 10px;
+  }
+
+  .sliderTwo,
+  .sliderThree {
+    display: flex;
+  }
+}
