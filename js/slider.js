@@ -36,9 +36,9 @@ async function getJobs(e) {
 
         jobName.forEach(name => {
             jobName[j].innerText = jobs[i].name;
-            jobLocation[j].innerText = jobs[i].locations[0].name;
-            jobLevel[j].innerText = jobs[i].levels[0].name;
-            jobCompany[j].innerText = jobs[i].company.name;
+            jobLocation[j].innerHTML = `<b>Location:</b> ${jobs[i].locations[0].name}`;
+            jobLevel[j].innerHTML = `<b>Level:</b> ${jobs[i].levels[0].name}`;
+            jobCompany[j].innerHTML = `<b>Company:</b> ${jobs[i].company.name}`;
             visitJob[j].setAttribute('href', jobs[i].refs.landing_page);
             readMoreBtn[j].addEventListener('click', () => {
 
@@ -71,9 +71,9 @@ function getPreviousJob(e) {
 
     jobName.forEach(name => {
         jobName[j].innerText = jobs[i].name;
-        jobLocation[j].innerText = jobs[i].locations[0].name;
-        jobLevel[j].innerText = jobs[i].levels[0].name;
-        jobCompany[j].innerText = jobs[i].company.name;
+        jobLocation[j].innerHTML = `<b>Location:</b> ${jobs[i].locations[0].name}`;
+        jobLevel[j].innerHTML = `<b>Level:</b> ${jobs[i].levels[0].name}`;
+        jobCompany[j].innerHTML = `<b>Company:</b> ${jobs[i].company.name}`;
         visitJob[j].setAttribute('href', jobs[i].refs.landing_page);
 
         i--;
