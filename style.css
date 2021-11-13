@@ -107,7 +107,7 @@ h4 {
 }
 
 .sliderJobs a {
-  color: black;
+  color: var(--primary);
   font-weight: 600;
 }
 
@@ -117,7 +117,7 @@ h4 {
 
 .sliderJobs a:active,
 .sliderJobs a:hover {
-  color: var(--primary);
+  color: black;
 }
 
 .sliderReadMore {
@@ -188,7 +188,17 @@ h4 {
   z-index: 12;
   display: flex;
   align-items: center;
-  display: none;
+  transform: scale(0);
+}
+
+.aboutJobCardScale {
+  transform: scale(1);
+  transition: all 0.5s ease-out;
+}
+
+.aboutJobCardScaleZero {
+  transform: scale(0);
+  transition: all 0.4s ease-out;
 }
 
 .aboutJob {

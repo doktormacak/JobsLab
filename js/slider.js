@@ -48,7 +48,8 @@ async function getJobs(e) {
             readMoreBtn[j].addEventListener('click', (e) => {
                 e.stopPropagation();
                 aboutJob.innerHTML = e.target.previousElementSibling.innerHTML;
-                aboutJobCard.style.display = 'flex';
+                aboutJobCard.classList.remove('aboutJobCardScaleZero');
+                aboutJobCard.classList.add('aboutJobCardScale');
             });
 
             i++;
@@ -85,7 +86,8 @@ function getNextJob() {
             readMoreBtn[j].addEventListener('click', (e) => {
                 e.stopPropagation();
                 aboutJob.innerHTML = e.target.previousElementSibling.innerHTML;
-                aboutJobCard.style.display = 'flex';
+                aboutJobCard.classList.remove('aboutJobCardScaleZero');
+                aboutJobCard.classList.add('aboutJobCardScale');
             });
 
             i++;
@@ -118,7 +120,8 @@ function getPreviousJob(e) {
             e.stopPropagation();
             clearInterval(changeJob);
             aboutJob.innerHTML = e.target.previousElementSibling.innerHTML;
-            aboutJobCard.style.display = 'flex';
+            aboutJobCard.classList.remove('aboutJobCardScaleZero');
+            aboutJobCard.classList.add('aboutJobCardScale');
         });
 
         i--;
@@ -172,7 +175,8 @@ container.addEventListener('mouseenter', mouseIn);
 container.addEventListener('mouseleave', mouseOut);
 document.addEventListener('keydown', changeWithArrows);
 closeJobCardBtn.addEventListener('click', () => {
-    aboutJobCard.style.display = 'none';
+    aboutJobCard.classList.remove('aboutJobCardScale');
+    aboutJobCard.classList.add('aboutJobCardScaleZero');
 });
 
 
