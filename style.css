@@ -55,9 +55,51 @@ font-size: 1.1em;
 
 
 /* top rated */
+  .toprated{
+      width: 100%;
+      height: fit-content;
+      display: grid;
+      background-color: var(--secondary);
+      border-radius: 30px 30px 30px 30px;
+      grid-gap:10px;
 
 
+  }
+  .toprated .col{
+      width:100%;
+      height:40%;
+     display:grid;
+     grid-template-columns: 1fr 2fr;
+    
+     
+  }
 
+  .toprated .col  img{
+      height:10rem;
+      width: 10rem;
+      border-radius: 30% 30% 30% 30%;
+      margin-top: 20%;
+      margin-bottom: 20%;
+      margin-left:10%;
+      float: left;
+  }
+  
+  .toprated .col .content{
+      margin-right: 20%;
+      text-align: right;
+      margin-top: 10%;
+  }
+ 
+  
+ 
+
+  @media screen and (min-width: 64em) {
+      .toprated{
+          width:100%;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+  }
 /* sidebar */
 
 
