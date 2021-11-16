@@ -99,7 +99,16 @@ font-size: 1.1em;
       border-radius:12px;
       width:10rem;
       height:3rem;
+      
   }
+  .btn:hover {background-color: rgb(185, 126, 233)}
+
+.btn:active {
+  background-color: rgb(185, 126, 233);
+  box-shadow: 0 5px var(--primary);
+  transform: translateY(4px);
+}
+
  
   
  
