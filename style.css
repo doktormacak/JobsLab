@@ -89,6 +89,17 @@ font-size: 1.1em;
       text-align: left;
       margin-top: 10%;
   }
+  .btn{
+      background: var(--primary);
+      border:none;
+      font-size: 1rem;
+      color:#dddbff ;
+      margin-top:30%;
+      margin-bottom: 20%;
+      border-radius:12px;
+      width:10rem;
+      height:3rem;
+  }
  
   
  
