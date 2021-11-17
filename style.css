@@ -62,45 +62,73 @@ font-size: 1.1em;
       background-color: var(--secondary);
       border-radius: 30px 30px 30px 30px;
       grid-gap:10px;
-      margin:5px 5px 5px 5px;
+      
+     
 
 
   }
-  .toprated .col{
+   .col{
       width:100%;
       height:40%;
-     display:grid;
-     grid-template-columns: 1fr 2fr;
-    grid-gap:10%;
+      display: none;
      
+    
+  
   }
+  
+  .col:nth-child(1){
+      display: block;
+  }
+  
+  .col:nth-child(2){
+    display: block;
+}
+.col:nth-child(3){
+    display: block;
+}
+
+
+
 
   .toprated .col  img{
       height:10rem;
-      width: 10rem;
+      max-width: 100%;
       border-radius: 30% 30% 30% 30%;
-      margin-top: 20%;
-      margin-bottom: 20%;
-      margin-left:10%;
-      float: left;
-  }
-  
-  .toprated .col .content{
-      margin-right: 20%;
-      text-align: left;
       margin-top: 10%;
+      margin-bottom: 10%;
+      margin-left: 5%;
+      margin-right:5%;
+      float: left;
+    
+  }
+ 
+  .toprated .col .content{
+    margin-right:10%;   
+    margin-left: 10%;
+      padding-left: 10%;
+        text-align: left;
+      
+      
+  }
+
+  .col::after{
+    content: " ";
+    clear: both;
+    display: table;
   }
   .btn{
       background: var(--primary);
       border:none;
       font-size: 1rem;
       color:#dddbff ;
-      margin-top:30%;
+      
       margin-bottom: 20%;
       border-radius:12px;
       width:10rem;
       height:3rem;
-      margin-right: 20%;
+    margin-left: 10%;
+    
+      cursor: pointer;
       
   }
   .btn:hover {background-color: rgb(185, 126, 233)}
@@ -124,9 +152,10 @@ font-size: 1.1em;
 
   @media screen and (min-width: 64em) {
       .toprated{
-          width:100%;
+          width:100vws;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
+          
       }
      
   }
