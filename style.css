@@ -181,10 +181,16 @@ font-size: 1.1em;
 
 
 }
+.modal h2{
+    color:black;
+}
+.modal p{
+    color:black
+}
 .modal-close{
     position:absolute;
-    top:10px;
-    right:10px;
+    top:20px;
+    right:20px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -195,13 +201,14 @@ font-size: 1.1em;
 }
 .modal{
     background-color: var(--secondary);
-    width: 50%;
-    height:70%;
+    width: 60%;
+    height:90%;
     display:flex;
     justify-content: space-around;
     align-items:center;
     flex-direction: column;
     position: relative;
+    border-radius: 10% 10% 10% 10%;
 
 
 

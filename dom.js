@@ -14,17 +14,31 @@ const loadmore = document.querySelector('#loadmore');
             event.target.style.display = 'none';
         }
     })
+ 
 
-    var modallink=document.querySelector('.modallink');
+    var modallinks=document.querySelectorAll('[data-target]');
     var modalBg=document.querySelector('.modal-bg');
     var modalClose=document.querySelector('.modal-close');
 
 
-    modallink.addEventListener('click',function(){
-        modalBg.classList.add('bg-active');
+    modallinks.forEach((modallink)=>{
+
+        console.log(modallink)
+        modallink.addEventListener('click',function(){
+        
+        modalBg.classList.add('bg-active');});
 
     });
 
+    
+    
+    
+    
+    
+    
+    
     modalClose.addEventListener('click',function(){
         modalBg.classList.remove('bg-active');
     });
+
+
