@@ -33,7 +33,7 @@ const loadmore = document.querySelector('#loadmore');
               </div>
               <div class="content" id="app">
                 <a href="#modal1" class="modallink"  data-target="modal1"><h2 class="Title">${job.name}</h2></a>
-                <p class="about">${job.type}</p>
+                <p class="about">${job.levels.name}</p>
                 <p class="company">${job.company.name}</p>
            </div>
            
@@ -50,19 +50,19 @@ const loadmore = document.querySelector('#loadmore');
 fetchData();
 
 
-var modallinks=document.querySelector('.modallink');
+var modallinks=document.querySelectorAll('.modallink');
     var modalBg=document.querySelector('.modal-bg');
     var modalClose=document.querySelector('.modal-close');
 
 
-   
+    modallinks.forEach((modallink)=>{
 
        
         modallink.addEventListener('click',function(){
         
         modalBg.classList.add('bg-active');});
 
-    
+    });
 
     
     
