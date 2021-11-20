@@ -55,12 +55,18 @@ font-size: 1.1em;
 
 
 /* top rated */
+.one{
+    width: 100%;  
+    background-color: var(--secondary);
+    border-radius: 30px 30px 30px 30px;
+    height: fit-content;
+}
   .toprated{
       width: 100%;
-      height: fit-content;
+     
       display: grid;
-      background-color: var(--secondary);
-      border-radius: 30px 30px 30px 30px;
+      height: fit-content;
+     
       grid-gap:10px;
       
      
@@ -90,9 +96,9 @@ font-size: 1.1em;
 
 
 
-  .toprated .col  img{
+   .col  img{
       height:10rem;
-      max-width: 100%;
+      width: 10rem;
       border-radius: 30% 30% 30% 30%;
       margin-top: 10%;
       margin-bottom: 10%;
@@ -102,13 +108,14 @@ font-size: 1.1em;
     
   }
  
-  .toprated .col .content{
-    margin-right:10%;   
+  .col .content{
+    margin-right:5%;   
     margin-left: 10%;
       padding-left: 10%;
         text-align: left;
         margin-top: 10%;
         margin-bottom: 10%;
+        font-size: smaller;
       
       
   }
@@ -124,7 +131,7 @@ font-size: 1.1em;
       font-size: 1rem;
       color:#dddbff ;
       
-      margin-bottom: 20%;
+      margin-bottom: 10%;
       border-radius:12px;
       width:10rem;
       height:3rem;
