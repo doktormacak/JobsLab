@@ -40,7 +40,11 @@ async function getJobs(e) {
 
         jobName.forEach(name => {
             jobName[j].innerText = jobs[i].name;
-            jobLocation[j].innerHTML = `<b>Location:</b> ${jobs[i].locations[0].name}`;
+            if (jobs[i].locations[0] != undefined) {
+                jobLocation[j].innerHTML = `<b>Location:</b> ${jobs[i].locations[0].name}`;
+            } else {
+                jobLocation[j].innerHTML = '<b>Location:</b> N/A';
+            }
             jobLevel[j].innerHTML = `<b>Level:</b> ${jobs[i].levels[0].name}`;
             jobCompany[j].innerHTML = `<b>Company:</b> ${jobs[i].company.name}`;
             contents[j].innerHTML = ` <b>${jobs[i].name}</b> <br><br> ${jobs[i].contents} <br> <a href="${jobs[i].refs.landing_page}" target="_blank">Visit</a>`;
@@ -78,7 +82,11 @@ function getNextJob() {
 
         jobName.forEach(name => {
             jobName[j].innerText = jobs[i].name;
-            jobLocation[j].innerHTML = `<b>Location:</b> ${jobs[i].locations[0].name}`;
+            if (jobs[i].locations[0] != undefined) {
+                jobLocation[j].innerHTML = `<b>Location:</b> ${jobs[i].locations[0].name}`;
+            } else {
+                jobLocation[j].innerHTML = '<b>Location:</b> N/A';
+            }
             jobLevel[j].innerHTML = `<b>Level:</b> ${jobs[i].levels[0].name}`;
             jobCompany[j].innerHTML = `<b>Company:</b> ${jobs[i].company.name}`;
             contents[j].innerHTML = ` <b>${jobs[i].name}</b> <br><br> ${jobs[i].contents} <br> <a href="${jobs[i].refs.landing_page}" target="_blank">Visit</a>`;
@@ -111,7 +119,11 @@ function getPreviousJob(e) {
 
     jobName.forEach(name => {
         jobName[j].innerText = jobs[i].name;
-        jobLocation[j].innerHTML = `<b>Location:</b> ${jobs[i].locations[0].name}`;
+        if (jobs[i].locations[0] != undefined) {
+            jobLocation[j].innerHTML = `<b>Location:</b> ${jobs[i].locations[0].name}`;
+        } else {
+            jobLocation[j].innerHTML = '<b>Location:</b> N/A';
+        }
         jobLevel[j].innerHTML = `<b>Level:</b> ${jobs[i].levels[0].name}`;
         jobCompany[j].innerHTML = `<b>Company:</b> ${jobs[i].company.name}`;
         contents[j].innerHTML = `<b>${jobs[i].name}</b> <br><br> ${jobs[i].contents} <br> <a href="${jobs[i].refs.landing_page}" target="_blank">Visit</a>`;
