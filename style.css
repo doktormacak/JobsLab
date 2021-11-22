@@ -151,12 +151,15 @@ font-size: 1.1em;
  
   .Title{
       color:black;
+
   }
   .about{
       color:black;
+     
   }
   .company{
       color:black;
+      
   }
 
   @media screen and (min-width: 64em) {
@@ -196,8 +199,8 @@ font-size: 1.1em;
 }
 .modal-close{
     position:absolute;
-    top:20px;
-    right:20px;
+    top:7%;
+    right:7%;
     font-weight: bold;
     cursor: pointer;
 }
@@ -206,16 +209,22 @@ font-size: 1.1em;
     opacity:1;
 
 }
+.disNone{
+    display:none;
+    
+}
 .modal{
     background-color: var(--secondary);
-    width: 60%;
+    width: 90%;
     height:90%;
     display:flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items:center;
     flex-direction: column;
     position: relative;
-    border-radius: 10% 10% 10% 10%;
+    border-radius: 10px 10px 10px 10px;
+    
+    
 
 
 
@@ -227,6 +236,16 @@ font-size: 1.1em;
     border-radius: 30% 30% 30% 30%;
     
 
+}
+.paragr{
+    font-size: x-large;
+    text-align: center;
+    padding:5px;
+    
+}
+.landing_page{
+    text-align: center;
+    padding:5px;
 }
 
 /* sidebar */
