@@ -27,13 +27,12 @@ li {
 body {
   background: var(--primary);
   font-family: "Lexend Peta", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
   background-color: white;
   border-radius: 60px;
-  width: 100vw;
-  height: 100vh;
 }
 
 /* fonts */
@@ -262,10 +261,10 @@ h4 {
 
 /* top rated */
 .one{
-    width: 100%;  
+    width: 90%;
+    margin: auto;
     background-color: var(--secondary);
     border-radius: 30px 30px 30px 30px;
-    height: fit-content;
 }
   .toprated{
       width: 100%;
@@ -442,6 +441,11 @@ h4 {
 
 /* Large Screens */
 @media screen and (min-width: 64em) {
+  
+  body{
+    background-color: white;
+  }
+  
   /* slider */
   .slider {
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
@@ -457,12 +461,18 @@ h4 {
   
   /* top rated */
       .toprated{
-          width:100vws;
+          width: auto;
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
-          
+          height: auto;
       }
      
+    .one{
+    float: left;
+    width: 70%;
+    margin: 0px 0px 10px 10px;
+  
+  }
   
   
 }
