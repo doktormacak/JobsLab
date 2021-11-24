@@ -41,13 +41,13 @@ font-size: 1.1em;
 
 /* mobile style */
 /* stranica podijeljena u 10 kolona */
-.container {
+.containerWrapper {
     background: white;
     border-radius: 2.5rem;
     
 }
 
-.grid {
+.gridHeader {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 10px;
