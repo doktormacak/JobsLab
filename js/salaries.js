@@ -24,10 +24,12 @@ async function getSalaries() {
                     li = document.createElement('li');
                     li.innerText = `${salarie}`;
                     list.appendChild(li);
-                    listArr.push(li.innerText);
+
                 }
             });
         }
+
+
 
         if (list.innerHTML === '') {
             list.innerHTML = `<b>Sorry. No information about that job.</b>`;
@@ -41,7 +43,7 @@ async function getSalaries() {
                 li = document.createElement('li');
                 li.innerText = `${element['position_title']}: ${element['average_of_base_salary']}`;
                 list.appendChild(li);
-                listArr.push(li.innerText);
+
             });
         }
     })
