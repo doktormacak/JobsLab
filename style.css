@@ -2,8 +2,7 @@
 :root {
   --primary: #77437f;
   --secondary: #f0f7aa;
-  @import url("@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Rubik&display=swap");")
-  ;;
+  @import url("@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Rubik&display=swap");");
 }
 /* reset */
 * {
@@ -261,92 +260,80 @@ h4 {
 }
 
 /* top rated */
-.one{
-    width: 90%;
-    margin: 10px auto;
-    background-color: var(--secondary);
-    border-radius: 30px 30px 30px 30px;
+.one {
+  width: 90%;
+  margin: 10px auto;
+  background-color: var(--secondary);
+  border-radius: 30px 30px 30px 30px;
 }
-  .toprated{
-      width: 100%;
-     
-      display: grid;
-      height: fit-content;
-     
-      grid-gap:10px;
-      
-     
+.toprated {
+  width: 100%;
 
+  display: grid;
+  height: fit-content;
 
-  }
-   .col{
-      width:100%;
-      height:40%;
-      display: none;
-     
-    
-  
-  }
-  
-  .col:nth-child(1){
-      display: block;
-  }
-  
-  .col:nth-child(2){
-    display: block;
+  grid-gap: 10px;
 }
-.col:nth-child(3){
-    display: block;
+.col {
+  width: 100%;
+  height: 40%;
+  display: none;
 }
 
+.col:nth-child(1) {
+  display: block;
+}
 
+.col:nth-child(2) {
+  display: block;
+}
+.col:nth-child(3) {
+  display: block;
+}
 
+.col img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 30% 30% 30% 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  float: left;
+}
 
-   .col  img{
-      height:10rem;
-      width: 10rem;
-      border-radius: 30% 30% 30% 30%;
-      margin-top: 10%;
-      margin-bottom: 10%;
-      margin-left: 5%;
-      margin-right:5%;
-      float: left;
-    
-  }
- 
-  .col .content{
-    margin-right:5%;   
-    margin-left: 10%;
-      padding-left: 10%;
-        text-align: left;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        font-size: smaller;
-      
-      
-  }
+.col .content {
+  margin-right: 5%;
+  margin-left: 10%;
+  padding-left: 10%;
+  text-align: left;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: smaller;
+}
 
-  .col::after{
-    content: " ";
-    clear: both;
-    display: table;
-  }
-  .btn{
-      background: var(--primary);
-      border:none;
-      font-size: 1rem;
-      color:#dddbff ;
-      
-      margin-bottom: 10%;
-      border-radius:12px;
-      width:10rem;
-      height:3rem;
-    margin-left: 10%;
-    
-      cursor: pointer;
-      
-  }
-  .btn:hover {background-color: rgb(185, 126, 233)}
+.col::after {
+  content: " ";
+  clear: both;
+  display: table;
+}
+.btn {
+  background: var(--primary);
+  border: none;
+  font-size: 1rem;
+  color: #dddbff;
+
+  margin-bottom: 10%;
+  border-radius: 12px;
+  width: 10rem;
+  height: 3rem;
+  margin-left: 10%;
+
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(185, 126, 233);
+}
 
 .btn:active {
   background-color: rgb(185, 126, 233);
@@ -354,87 +341,76 @@ h4 {
   transform: translateY(4px);
 }
 
- 
-  .Title{
-      color:black;
-
-  }
-  .about{
-      color:black;
-     
-  }
-  .company{
-      color:black;
-      
-  }
-
-  /*modal*/
-.modal-bg{
-    position:fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height:100vh;
-    background-color: rgba(0,0,0,0.5);
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s;
-  }
-.modal h2{
-    color:black;
+.Title {
+  color: black;
 }
-.modal p{
-    color:black
+.about {
+  color: black;
 }
-.modal-close{
-    position:absolute;
-    top:7%;
-    right:7%;
-    font-weight: bold;
-    cursor: pointer;
-}
-.bg-active{
-    visibility: visible;
-    opacity:1;
-
-}
-.disNone{
-    display:none;
-    
-}
-.modal{
-    background-color: var(--secondary);
-    width: 90%;
-    height:90%;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    flex-direction: column;
-    position: relative;
-    border-radius: 10px 10px 10px 10px;
- }
-.modal-bg img{
-    
-    height:10rem;
-   
-    border-radius: 30% 30% 30% 30%;
-    
-
-}
-.paragr{
-    font-size: x-large;
-    text-align: center;
-    padding:5px;
-    
-}
-.landing_page{
-    text-align: center;
-    padding:5px;
+.company {
+  color: black;
 }
 
+/*modal*/
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.modal h2 {
+  color: black;
+}
+.modal p {
+  color: black;
+}
+.modal-close {
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+.disNone {
+  display: none;
+}
+.modal {
+  background-color: var(--secondary);
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px 10px 10px 10px;
+}
+.modal-bg img {
+  height: 10rem;
+
+  border-radius: 30% 30% 30% 30%;
+}
+.paragr {
+  font-size: x-large;
+  text-align: center;
+  padding: 5px;
+}
+.landing_page {
+  text-align: center;
+  padding: 5px;
+}
 
 /* sidebar */
 
@@ -442,11 +418,10 @@ h4 {
 
 /* Large Screens */
 @media screen and (min-width: 64em) {
-  
-  body{
+  body {
     background-color: white;
   }
-  
+
   /* slider */
   .slider {
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
@@ -459,21 +434,18 @@ h4 {
   .sliderThree {
     display: flex;
   }
-  
+
   /* top rated */
-      .toprated{
-          width: auto;
-          display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
-          height: auto;
-      }
-     
-    .one{
+  .toprated {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: auto;
+  }
+
+  .one {
     float: left;
     width: 70%;
     margin: 0px 0px 10px 10px;
-  
   }
-  
-  
 }

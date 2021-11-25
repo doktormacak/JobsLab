@@ -1,0 +1,101 @@
+:root {
+  --primary: #77437f;
+  --secondary: #f0f7aa;
+  @import url("@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Rubik&display=swap");")
+  ;;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Peta", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+  font-weight: bold;
+  padding: 10px;
+  border: 1px solid var(--primary);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+.container p {
+  display: inline-block;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--primary);
+}
+
+#inputSal {
+  border-radius: 10px;
+  padding: 7px;
+  border: 1px solid var(--primary);
+}
+
+#inputSal:focus {
+  outline: none;
+  border: 2px solid var(--primary);
+}
+
+#btnSal {
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  padding: 9px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1.2px;
+}
+
+#btnSal:hover {
+  background-color: #693970;
+}
+
+#btnSal:active {
+  transform: scale(0.96);
+}
+
+.listSal {
+  margin-top: 40px;
+}
+
+.salaries {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 700px) {
+  .salaries {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .searchSal {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 70%;
+    margin: auto;
+  }
+
+  #btnSal {
+    width: 100px;
+    margin: auto;
+  }
+}
