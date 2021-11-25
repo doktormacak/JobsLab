@@ -17,15 +17,17 @@ async function getSalaries() {
 
 
     btn.addEventListener('click', () => {
-        list.innerHTML = '';
-        listArr.forEach(salarie => {
-            if (salarie.toLowerCase().includes(inputSal.value)) {
-                li = document.createElement('li');
-                li.innerText = `${salarie}`;
-                list.appendChild(li);
-                listArr.push(li.innerText);
-            }
-        });
+        if (inputSal.value != '') {
+            list.innerHTML = '';
+            listArr.forEach(salarie => {
+                if (salarie.toLowerCase().includes(inputSal.value)) {
+                    li = document.createElement('li');
+                    li.innerText = `${salarie}`;
+                    list.appendChild(li);
+                    listArr.push(li.innerText);
+                }
+            });
+        }
 
         if (list.innerHTML === '') {
             list.innerHTML = `<b>Sorry. No information about that job.</b>`;
