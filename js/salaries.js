@@ -8,6 +8,7 @@ async function getSalaries() {
     const data = await request.json();
 
     let li;
+    list.innerHTML = '';
     data.forEach(element => {
         li = document.createElement('li');
         li.innerText = `${element['position_title']}: ${element['average_of_base_salary']}`;
