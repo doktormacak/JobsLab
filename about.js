@@ -21,3 +21,5 @@ brgr.onclick = () => {
         brgr.classList.remove('o');
     }
 };
+var iframe = document.getElementById('myiframe');
+iframe.src = iframe.src + window.location.search;
