@@ -61,11 +61,7 @@ h4 {
 
 /* mobile style */
 /* stranica podijeljena u 10 kolona */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 10px;
-}
+
 
 /* header */
 
