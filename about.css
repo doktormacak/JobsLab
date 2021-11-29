@@ -366,7 +366,7 @@ a,
 
 }
 .myForm{
-    margin-top:-30% ;
+    margin-top:-20% ;
     margin-left: 10%;
     
     
@@ -593,5 +593,11 @@ transform: translateY(4px);
          color:rgb(219, 104, 104);
          font-size: 2em;
       }
+      .containerWrapper {
+        background: white;
+        border-radius:0rem 0rem 2.5rem 2.5rem ;
+       height: 20%;
+       
+    }
       
 }
