@@ -543,7 +543,7 @@ transform: translateY(4px);
 
 .threediv .values img{
    padding-left: 10%;
-   padding-right: 30%;
+   padding-right: 25%;
    height:25em;
    width:25em;
   padding-top: -10px;
@@ -551,8 +551,8 @@ transform: translateY(4px);
    
 }
 .threediv .values p{
-    
-    padding-right: 25%;
+    padding-left:10%;
+    padding-right: 20%;
     text-align: center;
     padding-bottom:20%;
     margin-top: auto;
@@ -564,4 +564,27 @@ transform: translateY(4px);
     content:" " ;
     clear:both;
     display:table;
+}
+
+
+@media screen and (min-width: 64em){
+    .threediv .values img{
+       
+        padding-right: 30%;
+        height:25em;
+        width:25em;
+       padding-top: -10px;
+        align-items: center;
+        
+     }
+     .threediv .values p{
+        
+         padding-right: 30%;
+         text-align: center;
+         padding-bottom:20%;
+         margin-top: auto;
+         font-style: italic;
+         color:rgb(219, 104, 104);
+         font-size: 2em;
+      }
 }
