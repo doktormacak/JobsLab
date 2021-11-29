@@ -61,8 +61,11 @@ h4 {
 
 /* mobile style */
 /* stranica podijeljena u 10 kolona */
-
-
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+}
 /* header */
 
 /* slider  */
@@ -422,7 +425,7 @@ h4 {
   .slider {
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     width: 70%;
-    float: left;
+
     margin-left: 10px;
   }
 
@@ -440,7 +443,6 @@ h4 {
   }
 
   .one {
-    float: left;
     width: 70%;
     margin: 0px 0px 10px 10px;
   }
