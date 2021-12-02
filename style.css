@@ -66,7 +66,6 @@ h4 {
   grid-template-columns: repeat(10, 1fr);
   gap: 10px;
 }
-
 /* header */
 .containerWrapper {
   background: white;
@@ -582,7 +581,6 @@ a,
   .slider {
     grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     width: 70%;
-  /*float: left; */
     margin-left: 10px;
   }
 
@@ -599,11 +597,12 @@ a,
     height: auto;
   }
 
-/*  .one {
-    float: left;
+
+  .one {
+
     width: 70%;
     margin: 0px 0px 10px 10px;
-  } */
+  } 
 }
 
 .gridFooter {
