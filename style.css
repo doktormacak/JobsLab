@@ -638,6 +638,11 @@ height:12em;
  
     
   }
+  .container{
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   .sidebar{
     background-color: var(--secondary);
   
