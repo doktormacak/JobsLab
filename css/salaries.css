@@ -32,7 +32,7 @@ a {
 .containerWrapper {
   background: white;
   border-radius: 0rem 0rem 2.5rem 2.5rem;
-  height: 23%;
+  height: 80px;
 }
 
 .gridHeader {
@@ -45,12 +45,13 @@ a {
 .footerWrapper {
   background: white;
   border-radius: 2.5rem 2.5rem 0rem 0rem;
-  height: 10%;
   width: 98vw;
+  height: 40px;
   margin-left: 0.5%;
   margin-top: 2em;
   border-top: 1px solid var(--primary);
 }
+
 .gridFooter {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -182,6 +183,10 @@ a,
   .hamWrapper {
     display: none;
   }
+}
+
+.wrapper {
+  min-height: calc(100vh - 120px);
 }
 
 .container {
