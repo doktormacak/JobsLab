@@ -595,6 +595,16 @@ iframe{
   color: black;
   font-weight: bold;
   text-align: center;
+  font-size: 1.5rem;
+}
+ .jobtitle{
+  color:black;
+  text-align: center;
+  font-size: 1rem;
+  padding:5px;
+}
+.sidebar2 a{
+  cursor: pointer;
 }
 /* footer */
 
@@ -637,7 +647,8 @@ height:12em;
  width:15em;
  float: right;
  position:relative;
-height:30em;
+height:23em;
+overflow: hidden;
  
     
   }

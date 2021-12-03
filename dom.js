@@ -47,9 +47,7 @@ const loadmore = document.querySelector('#loadmore');
           </div>`;
           }).join( ` `);
              console.log(html);
-          document
-          .querySelector('#app')
-            .innerHTML=html;
+          document.querySelector('#app').innerHTML=html;
         var modallinks=document.querySelectorAll('.modallink');
 
         var modalBg=document.querySelector('.modal-bg');
@@ -65,8 +63,8 @@ const loadmore = document.querySelector('#loadmore');
                 console.log(e.target.parentNode.nextElementSibling)
                 modalBg.firstElementChild.innerHTML=e.target.parentNode.nextElementSibling.innerHTML;
             });
-        });
-
+        })
+     
       }).catch(error =>{
            console.log(error);
       });
@@ -75,28 +73,25 @@ fetchData();
 
 
 
-/*var modallinks=document.querySelectorAll('.modallink');
-    var modalBg=document.querySelector('.modal-bg');
     
-
-
-    modallinks.forEach((modallink)=>{
-
-       
-        modallink.addEventListener('click',function(){
+    
+    
+function fetchData2(){
+    fetch("https://www.themuse.com/api/public/jobs?page=1").then(response=>{
+        if(!response.ok){
+          throw Error("ERROR");
+        }
+        return response.json();
         
-        modalBg.classList.add('bg-active');});
+    })   .then(data=>{
+    const html1=data.results.map(job=>{
+        return `<a href="#"><h2 class="jobtitle">${job.name}</h2></a>`;
+    }).join( ` `);
+    document.querySelector('#titles').innerHTML=html1;
 
-    });
+}).catch(error =>{
+    console.log(error);
+});
+}
 
-    
-    
-    
-    
-    
-    
-    
-    modalClose.addEventListener('click',function(){
-        modalBg.classList.remove('bg-active');
-    });*/
-
+fetchData2();
