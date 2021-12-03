@@ -629,12 +629,12 @@ iframe{
     background-color: var(--secondary);
   
     border-radius: 50px;
-  margin-top: 10px;
-  margin-left: 10px;
- width:15em;
- float: right;
- position:relative;
-height:12em;
+    margin-top: 10px;
+    margin-left: 10px;
+    width:15em;
+    float: right;
+    position:relative;
+    height:12em;
  
     
   }
@@ -647,13 +647,13 @@ height:12em;
     background-color: var(--secondary);
   
     border-radius: 50px;
-  margin-top: 10px;
-  margin-left: 10px;
- width:15em;
- float: right;
- position:relative;
-height:23em;
-overflow: hidden;
+    margin-top: 10px;
+    margin-left: 10px;
+    width:15em;
+    float: right;
+    position:relative;
+    height:23em;
+    overflow: hidden;
  
     
   }
@@ -666,7 +666,7 @@ overflow: hidden;
   }
   .container2{
     display:flex;
-   flex-direction: column;
+    flex-direction: column;
   }
 
   .sliderTwo,
@@ -680,15 +680,15 @@ overflow: hidden;
     width:auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-   height: auto;
+    height: auto;
   }
 
 
   .one {
 
-    width: 65em;
-    margin: 10px;
-   border-radius: 50px;
+  width: 65em;
+  margin: 10px;
+  border-radius: 50px;
   } 
 }
 
