@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/list.css">
+    <title>JobsLab</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="containerWrapper" id="headWrapp">
+        <div class="headerWrapper">
+            <div class="header gridHeader">
+                <div class="logoWrapper" id="logoWr">
+                    <img class="logo" src="../images/science_black_24dp.svg">
+                    <h1 class="logoTxt"><span>J</span>obs<span>L</span>ab</h1>
+                </div>
+
+                <div class="headerNav">
+                    <a class="links" href="../index.html">Home</a>
+                    <a class="links" href="./list.html">List</a>
+                    <a class="links" href="./salaries.html">Salaries</a>
+                    <a class="links" href="../aboutus.html">About Us</a>
+                </div>
+
+                <div class="hamWrapper">
+                    <button class="hamburgerBtn o" id="brgrBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" fill="none"/>
+                            <g id="closeBlack" class="closeBtn">
+                                <path id="Vector" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="white"/>
+                            </g>
+                            <g id="menuBlack" class="openBtn">
+                                <path id="Vector_2" d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="black"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>    
+            </div>
+
+            <div class="dropDown gridHeader">
+                <div class="headerLinks">
+                    <a class="links" href="../index.html">Home</a>
+                    <a class="links" href="./list.html">List</a>
+                    <a class="links" href="./salaries.html">Salaries</a>
+                    <a class="links" href="../aboutus.html">About Us</a>
+                </div>
+            </div>    
+        </div>          
+    </div>
+
+    <div class="search">
+
+        <h2 class="searchFilter">Search</h2>
+
+        <div class="searchBar">
+            <input class="searchInput" id="searchInput" type="text" name="placeholder">
+        </div>
+
+        <h2 class="searchFilter">Filter By</h2>
+        
+        <div class="filters">
+            
+            <label for="filterJob">
+                <input type="radio" name="filters" id="filterJob" checked="checked">
+                <i>Job</i>
+            </label>
+
+            
+            <label for="filterLocation">
+                <input type="radio" name="filters" id="filterLocation">
+                <i>Location</i>
+            </label>
+
+            
+            <label for="filterLevels">
+                <input type="radio" name="filters" id="filterLevels">
+                <i>Levels</i>
+            </label>
+        </div>
+    </div>
+    
+    
+    <div class="jobList" id="jobList">
+
+    </div>
+
+    <div class="loadmoreContainer">
+        <button class="loadmore" id="loadmore">Load More</button>
+    </div>
+
+    <div class="footer gridHeader">
+        <div class="headerNav">
+            <a class="links" href="../index.html">Home</a>
+                <a class="links" href="./list.html">List</a>
+                <a class="links" href="./salaries.html">Salaries</a>
+                <a class="links" href="../aboutus.html">About Us</a>
+        </div>
+    </div>
+
+    <script src="../js/list.js"></script>
+</body>
+</html>

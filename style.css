@@ -210,7 +210,7 @@ a,
   transition: color 2ms ease;
 }
 
-@media screen and (max-width: 35rem) {
+@media screen and (max-width: 64rem) {
   .headerNav{
       display: none;
   }
@@ -228,6 +228,8 @@ a,
 
 
 }
+
+
 
 
 /* slider  */
